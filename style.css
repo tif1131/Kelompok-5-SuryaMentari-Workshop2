@@ -1,0 +1,236 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4ff; /* Light blueish-gray */
+    color: #444; /* Darker gray */
+    line-height: 1.6;
+    /*background: url('path/to/your/car-service-background.jpg') no-repeat center center fixed; /* Optional: Add a subtle background image */
+    background-size: cover; /* Optional: Cover the entire background */
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px; /* Increased padding for more space */
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.container:hover {
+    transform: scale(1.01); /* Slight zoom on hover */
+}
+
+h1, h2, h3 {
+    color: #0056b3; /* Strong blue */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3; /* Underline */
+    padding-bottom: 10px;
+}
+
+nav {
+    background: linear-gradient(to right, #0056b3, #00a2ff); /* Gradient blue */
+    padding: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    background: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input, form select, form textarea {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #00a2ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 162, 255, 0.5);
+}
+
+button {
+    padding: 14px 25px;
+    background: linear-gradient(to right, #00a2ff, #0056b3); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+table, th, td {
+    border: 1px solid #d4e3e7;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f8fa;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff; /* Lightest blue on row hover */
+}
+
+.success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.error {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional Styling for Car Service Specifics */
+.service-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    color: #007acc; /* Slightly lighter blue */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.service-item p {
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #0056b3;
+    float: right;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        padding: 8px 15px;
+    }
+
+    form input, form select, form textarea {
+        padding: 10px;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    /* Hide table headers except for the first row */
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+        color: #555;
+    }
+}
